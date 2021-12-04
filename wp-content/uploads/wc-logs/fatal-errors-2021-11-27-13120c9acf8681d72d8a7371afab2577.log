@@ -1,0 +1,72 @@
+2021-11-27T03:02:50+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-27T03:04:10+00:00 CRITICAL Uncaught Exception: Invalid data: {"data":["Array","Array"],"element":"Array"} in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php:851
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(122): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(6727)
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(175): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Background_Process->maybe_handle('')
+#6 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\mywordpress\wp-admin\admin-ajax.php(187): do_action('wp_ajax_wp_imag...')
+#9 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php on line 851
+
+2021-11-27T03:09:33+00:00 CRITICAL Uncaught Exception: Invalid data: {"data":["Array","Array"],"element":"Array"} in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php:851
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(122): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(6727)
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(447): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Background_Process->handle_cron_healthcheck()
+#6 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\mywordpress\wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#9 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php on line 851
+
+2021-11-27T03:14:14+00:00 CRITICAL Uncaught Exception: Invalid data: {"data":["Array","Array"],"element":"Array"} in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php:851
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(122): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(6727)
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(447): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Background_Process->handle_cron_healthcheck()
+#6 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\mywordpress\wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#9 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php on line 851
+
+2021-11-27T03:16:19+00:00 CRITICAL Uncaught Exception: Invalid data: {"data":["Array","Array"],"element":"Array"} in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php:851
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(122): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(6727)
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(175): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Background_Process->maybe_handle('')
+#6 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\mywordpress\wp-admin\admin-ajax.php(187): do_action('wp_ajax_wp_imag...')
+#9 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php on line 851
+
+2021-11-27T03:19:08+00:00 CRITICAL Uncaught Exception: Invalid data: {"data":["Array","Array"],"element":"Array"} in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php:851
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(122): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(6727)
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(447): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Background_Process->handle_cron_healthcheck()
+#6 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\mywordpress\wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#9 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\elementor\core\base\document.php on line 851
+

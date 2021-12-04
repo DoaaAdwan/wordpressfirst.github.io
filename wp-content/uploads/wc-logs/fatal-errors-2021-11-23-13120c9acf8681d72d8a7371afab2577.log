@@ -1,0 +1,108 @@
+2021-11-23T17:43:06+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\mywordpress\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\mywordpress\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\mywordpress\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\mywordpress\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\mywordpress\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\mywordpress\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\mywordpress\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\mywordpress\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-11-23T17:50:22+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-23T18:04:01+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-23T18:11:37+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-23T18:21:11+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-23T18:28:47+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 484
+
+2021-11-23T18:34:19+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\mywordpress\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-11-23T20:13:55+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
+2021-11-23T20:14:05+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
+2021-11-23T20:14:08+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
+2021-11-23T20:14:11+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
+2021-11-23T20:19:13+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
+2021-11-23T20:19:18+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($function) must be a valid callback, non-static method Astra_Builder_Header::header_woo_cart() cannot be called statically in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php:221
+Stack trace:
+#0 C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-selective-refresh.php(371): WP_Customize_Partial->render(Array)
+#1 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(303): WP_Customize_Selective_Refresh->handle_render_partials_request('')
+#2 C:\xampp\htdocs\mywordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\mywordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\mywordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 C:\xampp\htdocs\mywordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mywordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mywordpress\wp-includes\customize\class-wp-customize-partial.php on line 221
+
